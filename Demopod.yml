@@ -1,0 +1,12 @@
+kind       : pod
+apiversion : appv1
+metadata 
+  name : demopod
+  labels :
+    envt : dev
+spec:
+  containers :
+    name : mynginx
+    image: nginx-latest
+  ports :
+    -containerport : 80
